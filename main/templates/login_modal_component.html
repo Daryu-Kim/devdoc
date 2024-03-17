@@ -1,0 +1,19 @@
+{% load static %}
+{% block static %}
+    <link rel="stylesheet" type="text/css" href="{% static '/css/modal_conponent.css' %}">
+{% endblock %}
+{% block content %}
+    <div class="modal-overlay">
+        <div class="modal-container">
+            <div></div>
+            <div class="agree-box">
+                <p><span>South Korea</span>가 위치한 계정으로 계속하면 당사의 <span>이용 약관</span>에 동의하고 <span>개인정보 보호정책</span>을 읽었음을
+                    인정하는
+                    것입니다.</p>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+{% block js %}
+    <script type="text/javascript" src="{% static '/js/login_modal_component.js' %}"></script>
+{% endblock %}

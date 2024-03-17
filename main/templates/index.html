@@ -1,10 +1,12 @@
-<!DOCTYPE html>
-<html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+{% extends 'base.html' %}
+{% load static %}
+{% block static %}
+    <link rel="stylesheet" type="text/css" href="{% static '/css/index.css' %}">
+{% endblock %}
+{% block content %}
     <p>Index Page!</p>
-</body>
-</html>
+    {% include 'login_modal_component.html' %}
+{% endblock %}
+{% block js %}
+    <script type="text/javascript" src="{% static '/js/index.js' %}"></script>
+{% endblock %}
